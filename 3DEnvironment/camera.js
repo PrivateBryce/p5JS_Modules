@@ -23,7 +23,7 @@ var camera = function(fov,aspectRatio,nearPlane,farPlane) {
     this.rotation = new Vector3();
 
     //RenderPass Cycle
-    this.renderPass.push(function() {
+    renderPass.push(function() {
         perspective(this.fov, this.aspectRatio, this.nearPlane, this.farPlane);
         /*
             TODO:
@@ -31,4 +31,4 @@ var camera = function(fov,aspectRatio,nearPlane,farPlane) {
                 Add movement of objects relative to the cameras position. 
         */
     });
-}
+};
