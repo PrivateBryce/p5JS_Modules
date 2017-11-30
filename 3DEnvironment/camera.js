@@ -28,7 +28,7 @@ var camera = function(fov,aspectRatio,nearPlane,farPlane) {
         /*
             TODO:
                 Add rotation to camera by rotating all objects around cameras position by cameras rotation.
-                Add movement of objects relative to the cameras position.
+                Add movement of objects relative to the cameras position. 
         */
     });
 }
