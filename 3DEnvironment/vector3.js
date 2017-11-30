@@ -14,20 +14,18 @@ var Vector3 = function(x,y,z) {
         if (!vector) { return this; }
         if (!vector.x || !vector.y || !vector.z) { return this; }
         return new Vector3(this.x+vector.x, this.y+vector.y, this.z+vector.z);
-    }
+    };
     this.sub = function(vector) {
         if (!vector) { return this; }
         if (!vector.x || !vector.y || !vector.z) { return this; }
         return new Vector3(this.x-vector.x, this.y-vector.y, this.z-vector.z);
-    }
+    };
     this.scale = function(scale) {
-        if (!vector) { return this; }
-        if (!vector.x || !vector.y || !vector.z) { return this; }
+        if (!scale) { return this; }
         return new Vector3(this.x*scale, this.y*scale, this.z*scale);
-    }
+    };
     this.divide = function(scale) {
-        if (!vector) { return this; }
-        if (!vector.x || !vector.y || !vector.z) { return this; }
+        if (!scale) { return this; }
         return new Vector3(this.x/scale, this.y/scale, this.z/scale);
-    }
-}
+    };
+};
