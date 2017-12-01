@@ -8,9 +8,17 @@
 //Initialize primary loop and side render functions.
 var renderPass = [];
 
+function render() {
+ //Your code goes here.
+}
+
 function draw() {
+    //Run RenderPass Functions.
     for(var index in renderPass) {
         if(!renderPass.hasOwnProperty(index)) { continue; }
         renderPass[index]();
     }
+    
+    //Run user_Code afterwards.
+    if(render) { render(); }
 }
