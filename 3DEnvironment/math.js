@@ -4,6 +4,11 @@
     Primary Purpose: Vector3 Class for Environmental Purposes
 */
 
+//Math functions
+Math.rad = function(degree) {
+	return (degree/360)*PI;
+};
+
 //Initialize Class
 var Vector3 = function(x,y,z) {
     this.x = x || 0;
