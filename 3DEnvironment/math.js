@@ -10,6 +10,14 @@ Math.rad = function(degree) {
 };
 
 //Initialize Class
+var rgba = funciton(r,g,b,a) {
+	this.r = r || 48;
+	this.g = g || 48;
+	this.b = b || 48;
+	this.a = a || 0;
+};
+
+//Initialize Class
 var Vector3 = function(x,y,z) {
     this.x = x || 0;
     this.y = y || 0;
